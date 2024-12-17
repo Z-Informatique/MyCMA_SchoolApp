@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MyCMA.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:MyCMA.Controls"
+       xmlns:page="clr-namespace:MyCMA.Pages"
+       xmlns:sys="clr-namespace:System;assembly=netstandard"
+       FlyoutHeaderBehavior="CollapseOnScroll">
+
+    <Shell.FlyoutHeader>
+        <controls:FlyoutHeader />
+    </Shell.FlyoutHeader>
+    
+    <Shell.FlyoutFooter>
+        <controls:FlyoutFooter />
+    </Shell.FlyoutFooter>
+
+    <FlyoutItem Route="mycma"
+                FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent Title="Tableau de bord"
+                      Icon="dash.png"
+                      ContentTemplate="{DataTemplate page:DashPage}"
+                      Route="DashPage" />
+        
+        <ShellContent Title="Mes cours"
+                      Icon="course.png"
+                      ContentTemplate="{DataTemplate page:CoursePage}"
+                      Route="CoursePage" />
+        
+        <ShellContent Title="Mon école"
+                      Icon="ecole.png"
+                      ContentTemplate="{DataTemplate page:MySchool}"
+                      Route="MainPage" />
+        
+        <ShellContent Title="Mon profil"
+                      Icon="profil.png"
+                      ContentTemplate="{DataTemplate page:ProfilPage}"
+                      Route="ProfilPage" />
+    </FlyoutItem>
+
+
+</Shell>

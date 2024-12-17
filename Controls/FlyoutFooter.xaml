@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyCMA.Controls.FlyoutFooter"
+             xmlns:sys="clr-namespace:System;assembly=netstandard">
+    <StackLayout>
+        <Label 
+            Text="MyCMA"
+            TextColor="Red"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" />
+        <Label x:DataType="{sys:DateTime}"
+               Text="{Binding Source={x:Static sys:DateTime.Now}, StringFormat='{0:dd MMMM yyyy}'}"
+               TextColor="Black"
+               HorizontalOptions="Center"/>
+    </StackLayout>
+</ContentView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyCMA.Controls.FlyoutHeader">
+
+    <Grid BackgroundColor="Black">
+        <Image Source="school"
+               Aspect="AspectFill"
+               Opacity="0.6"/>
+        <Label Text="John DOE"
+               TextColor="White"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+    </Grid>
+</ContentView>
