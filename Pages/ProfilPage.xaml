@@ -58,7 +58,11 @@
 
         <StackLayout Grid.Row="0"
                      VerticalOptions="End">
-            <Frame CornerRadius="40" BackgroundColor="White" Style="{StaticResource stlMainFrame}" BorderColor="Transparent" Padding="0">
+            <Frame CornerRadius="40"
+                   BackgroundColor="White"
+                   Style="{StaticResource stlMainFrame}"
+                   BorderColor="Transparent"
+                   Padding="0">
                 <Grid Padding="25, 10, 25,0"
                       RowSpacing="0">
                     <Grid.ColumnDefinitions>
@@ -76,8 +80,10 @@
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
 
-                    <Button Grid.Row="0" Grid.Column="1" 
-                            HorizontalOptions="End" 
+
+                    <Button Grid.Row="0"
+                            Grid.Column="1"
+                            HorizontalOptions="End"
                             ImageSource="phone.png"
                             Style="{StaticResource stlContactBtn}" />
                     <Button Grid.Row="0"
@@ -102,16 +108,17 @@
                            Grid.Column="0"
                            Grid.ColumnSpan="3"
                            Padding="0,10,0,0"
+                           Style="{StaticResource stlBoardTitle}"
                            FontSize="16">
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="Email: "
-                                      FontAttributes="Bold"
-                                      Style="{StaticResource stlBoardTitle}" />
+                                      FontAttributes="Bold"/>
                                 <Span Text=" john.doe@gmail.com" />
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
+
 
                     <Label Grid.Row="3"
                            Grid.Column="0"
@@ -149,8 +156,8 @@
                             BackgroundColor="#2193f3"
                             Text="Me contacter"
                             Margin="0,20,0,2"
-                            FontSize="17" 
-                            HeightRequest="45"/>
+                            FontSize="17"
+                            HeightRequest="45" />
                 </Grid>
             </Frame>
         </StackLayout>

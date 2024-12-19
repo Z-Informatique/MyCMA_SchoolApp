@@ -4,9 +4,10 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:MyCMA.Controls"
-       xmlns:page="clr-namespace:MyCMA.Pages"
-       xmlns:sys="clr-namespace:System;assembly=netstandard"
-       FlyoutHeaderBehavior="CollapseOnScroll">
+    xmlns:page="clr-namespace:MyCMA.Pages"
+    xmlns:sys="clr-namespace:System;assembly=netstandard"
+    FlyoutHeaderBehavior="CollapseOnScroll"
+    Shell.NavBarIsVisible="False">
 
     <Shell.FlyoutHeader>
         <controls:FlyoutHeader />
@@ -29,7 +30,7 @@
                       ContentTemplate="{DataTemplate page:CoursePage}"
                       Route="CoursePage" />
         
-        <ShellContent Title="Mon école"
+        <ShellContent Title="Sujets examens"
                       Icon="ecole.png"
                       ContentTemplate="{DataTemplate page:MySchool}"
                       Route="MainPage" />
